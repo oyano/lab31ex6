@@ -46,14 +46,6 @@ export default{
                 text: this.newUser.text,
                 favorites: false
             };
-            setTimeout(()=>{
-                this.newUser.name = '';
-                this.newUser.surname = '';
-                this.newUser.patronymicName = '';
-                this.newUser.phone = '';
-                this.newUser.text = '';
-            },1000);
-            
         },
 
     },
