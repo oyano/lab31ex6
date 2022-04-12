@@ -17,7 +17,7 @@
             </h2>
             <div class="container">
                 <button class="sortName" v-on:click='sortName'>
-                    По имени пися
+                    По имени
                 </button>
                 <button class="sortName" v-on:click='sortSurname'>
                     По фамилии
