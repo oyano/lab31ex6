@@ -104,6 +104,17 @@ export default{
                 }
                 return 0;
             });
+            this.users.sort(function compare(a, b) {
+                if (a.favorites && b.favorites) {
+                    if (a.name > b.name) {
+                        return 1;
+                    }
+                    if (a.name < b.name) {
+                        return -1;
+                    }
+                }
+                return 0;
+            });
         },
         sortSurname: function() {
             this.users.sort(function compare(a, b) {
@@ -124,6 +135,18 @@ export default{
                 }
                 return 0;
             });
+            this.users.sort(function compare(a, b) {
+                if (a.favorites && b.favorites) {
+                    if (a.surname > b.surname) {
+                        return 1;
+                    }
+                    if (a.surname < b.surname) {
+                        return -1;
+                    }
+                }
+                return 0;
+            });
+            
         },
     },
     watch:{
