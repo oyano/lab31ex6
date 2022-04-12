@@ -1,0 +1,150 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNew {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.addNew input,
+.addNew button {
+    margin: 10px 0 10px 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input[type='button'] {
+    width: 40px;
+    height: 40px;
+    background: #1b8adb;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: all .3s;
+    margin-right: 10px;
+}
+
+input[type='button']:hover {
+    background: #ffffff;
+    border: 1px solid #1b8adb;
+    border-radius: 50%;
+}
+
+li {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+h2 {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#sortMassive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    margin: 10px;
+    background: #1b8adb;
+    border: 1px solid #ffffff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 32px;
+    width: 200px;
+    transition: all .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background: #ffffff;
+    border: 1px solid #1b8adb;
+    color: #1b8adb;
+}
+
+.addNew input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    transition: all .2s;
+}
+
+.addNew input:hover,
+.addNew input:active {
+    border: 1px solid #1b8adb;
+}
+
+.addNew textarea {
+    max-width: 300px;
+    max-height: 100px;
+    min-width: 300px;
+    min-height: 100px;
+    outline: none;
+    border: 1px solid black;
+    transition: all .2s;
+    padding: 5px;
+}
+
+.addNew textarea:hover,
+.addNew textarea:active {
+    border: 1px solid #1b8adb;
+}
+
+ul,
+li {
+    transition: all .2s;
+}
+
+
+/* Animation list */
+
+.el-enter-active,
+.el-leave-active {
+    transition: all .2s;
+}
+
+.el-enter,
+.el-leave-to {
+    transform: translateX(50px);
+    opacity: 0;
+}
